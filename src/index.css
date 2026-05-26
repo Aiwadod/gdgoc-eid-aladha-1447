@@ -598,9 +598,10 @@ header .right img {
   min-height: unset;
   aspect-ratio: 855 / 805;
   background-image: url("/background-one.png");
+  margin-top: 2px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 98% 98%;
+  background-size: 97% 88%;
 }
 
 .split-card {
@@ -818,11 +819,15 @@ footer span {
 /* ── Download Overlay Button ── */
 .btn-download-overlay {
   position: absolute;
-  bottom: 12px;
-  left: 55%;
+  bottom: 16px;
+  border-radius: 4px !important;
+  left: 57%;
   transform: translateX(-50%);
-  border-radius: 50px;
-  padding: 10px 22px;
+  padding: 10px 22px !important;
+  border-left: .8px solid !important;         /* لون أبيض شفاف */
+  border-right: .8px solid !important;         /* لون أبيض شفاف */
+  backdrop-filter: blur(1.5px);                   /* تمويه الخلفية التي خلف العنصر */  
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1277,6 +1282,11 @@ top: 50% !important;
   margin-bottom: 0px;
   margin-top: 8%;
 }
+.btn-download-overlay {
+  position: absolute;
+  bottom: 5px;
+  padding: 0px 0px !important;
+  }
 }
 
 @media (max-width: 480px) {
