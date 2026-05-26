@@ -1474,4 +1474,7 @@ footer span {
   .error-message .error-svg--arabic {
     margin-top: -20px;
   }
+  .error-message .space {
+    margin-top: -12px;
+  }
 }
