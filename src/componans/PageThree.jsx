@@ -43,8 +43,8 @@ const normalAssetUrls = import.meta.glob('../assets/images/normal/*.{png,jpg,jpe
 
 // ── 
 const google = [
-    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 2500, textY: 6490, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
-    { id: 2, image: getAssetUrlByFilename(googleAssetUrls, 'design2.jpg'), textX: 2500, textY: 2420, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 2, image: getAssetUrlByFilename(googleAssetUrls, 'design2.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 3, image: getAssetUrlByFilename(googleAssetUrls, 'design3.jpg'), textX: 2500, textY: 1100, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 4, image: getAssetUrlByFilename(googleAssetUrls, 'design4.jpg'), textX: 2500, textY: 6620, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 5, image: getAssetUrlByFilename(googleAssetUrls, 'design5.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#eb4335', fontFamily: FONTS.IBM_PLEX_ARABIC },
@@ -54,12 +54,14 @@ const google = [
     { id: 9, image: getAssetUrlByFilename(googleAssetUrls, 'design9.jpg'), textX: 2500, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 10, image: getAssetUrlByFilename(googleAssetUrls, 'design10.jpg'), textX: 2500, textY: 3810, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 11, image: getAssetUrlByFilename(googleAssetUrls, 'design11.jpg'), textX: 2300, textY: 1400, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
-    { id: 12, image: getAssetUrlByFilename(googleAssetUrls, 'design12.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 12, image: getAssetUrlByFilename(googleAssetUrls, 'design12.jpg'), textX: 2500, textY: 6490, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 13, image: getAssetUrlByFilename(googleAssetUrls, 'design13.jpg'), textX: 2500, textY: 2420, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 14, image: getAssetUrlByFilename(googleAssetUrls, 'design14.jpg'), textX: 1200, textY: 700, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
 ];
 
 const normal = [
-    { id: 1, image: getAssetUrlByFilename(normalAssetUrls, 'design1.jpg'), textX: 2500, textY: 6490, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
-    { id: 2, image: getAssetUrlByFilename(normalAssetUrls, 'design2.jpg'), textX: 2500, textY: 2420, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 1, image: getAssetUrlByFilename(normalAssetUrls, 'design1.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 2, image: getAssetUrlByFilename(normalAssetUrls, 'design2.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 3, image: getAssetUrlByFilename(normalAssetUrls, 'design3.jpg'), textX: 2500, textY: 1100, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 4, image: getAssetUrlByFilename(normalAssetUrls, 'design4.jpg'), textX: 2500, textY: 6620, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 5, image: getAssetUrlByFilename(normalAssetUrls, 'design5.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#eb4335', fontFamily: FONTS.IBM_PLEX_ARABIC },
@@ -69,7 +71,9 @@ const normal = [
     { id: 9, image: getAssetUrlByFilename(normalAssetUrls, 'design9.jpg'), textX: 2500, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 10, image: getAssetUrlByFilename(normalAssetUrls, 'design10.jpg'), textX: 2500, textY: 3810, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 11, image: getAssetUrlByFilename(normalAssetUrls, 'design11.jpg'), textX: 2300, textY: 1400, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
-    { id: 12, image: getAssetUrlByFilename(normalAssetUrls, 'design12.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 12, image: getAssetUrlByFilename(normalAssetUrls, 'design12.jpg'), textX: 2500, textY: 6490, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 13, image: getAssetUrlByFilename(normalAssetUrls, 'design13.jpg'), textX: 2500, textY: 2420, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 14, image: getAssetUrlByFilename(normalAssetUrls, 'design14.jpg'), textX: 1200, textY: 700, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
 ];
 
 // ── cache ────────────────────────────────────
