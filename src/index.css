@@ -792,6 +792,48 @@ footer span {
   text-align: center;
 }
 
+/* ── Page Four Preview Wrapper ── */
+.page-four-preview {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.page-four-preview canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Download Overlay Button ── */
+.btn-download-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 55%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  padding: 10px 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.btn-download-overlay svg {
+      background-color: #DCDCDC;
+      padding: 2px;
+}
+
+
+.btn-download-overlay:hover {
+  background: #c8c8c8;
+}
+.page-four .card button {
+  padding: 0;
+  background: none;
+}
 /* ==========================================================================
   9. MEDIA QUERIES (All responsive rules grouped at the end)
   ========================================================================== */
@@ -942,6 +984,9 @@ footer span {
     aspect-ratio: 1693 / 2348;
     margin: -70px auto 0px auto;
     background-size: 100% 70%;
+  }
+  .page-four{
+    margin-top: -70px;
   }
 
   /* .page-two {
@@ -1097,36 +1142,40 @@ footer span {
   .page-four {
     width: 95%;
     min-height: unset;
-    aspect-ratio: 1693 / 2348;
+    /* aspect-ratio: 1693 / 2348; */
     margin: 20px auto;
     padding: 15px 5px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("./assets/backgrounds/design.png");
+    background-size: 100% 80%;
     border-radius: 0;
   }
   .page-four .canvas-section canvas {
-    min-width: 220px;
+    min-width: 130px;
     border-radius: 0;
 }
   .page-four .canvas-section {
     margin-left: -15px;
+    margin-right: 20px;
+    margin-top: -80px;
 }
 .page-four-preview {
-  width: 85%;
-  min-height: 300px;
+  width: 100%;
+  min-height: 170px;
+  padding: 1px;
 }
 .page-four .card h3 svg ,
 .page-four .card p svg {
-  width: 220px;
+  width: 120px;
+  margin-left: -20px;
+}
+.page-four .card p svg {
+  margin-top: -20px;
 }
 
   .split-card {
-    flex-direction: column;
     margin-top: 45px;
     margin-left: 70px;
     padding: 10px;
-    gap: 20px;
     direction: rtl;
   }
 
@@ -1139,11 +1188,12 @@ footer span {
   }
 
   .share-section {
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    margin-top: -80px;
   }
 
   .share-section h3 {
+    font-size: 0;
     margin-bottom: -30px;
     margin-top: -35px;
   }
@@ -1154,13 +1204,22 @@ footer span {
   .share-buttons-grid {
     max-width: 100%;
     gap: 5px;
-    grid-template-columns: repeat(2, minmax(100px, 115px));
-    margin-bottom: 150px;
+    grid-template-columns: repeat(2, minmax(54px, 66px));
+    margin-bottom: 10px;
     margin-left: -22px;
   }
 
+  .share-buttons-grid svg{
+    width: 12px !important; 
+    height: 12px !important; 
+  }
+  .share-buttons-grid .share-btn img{
+    width: 12px !important; 
+    height: 12px !important; 
+  }
+
   .share-btn {
-    padding: 8px !important;
+    padding: 3px 4px !important;
   }
 
 
@@ -1184,17 +1243,31 @@ footer span {
     margin-top: 0px;
   }
   footer{
-    margin-top: -70px;
+    margin-top: -50px;
   }
   .foot,
   .page-three footer{
     margin-top: 0px;
   }
+ .foot-four{
+    margin-top: -50px !important;
+  }
+  .btn-download-overlay {
+    left: 50%;
+  }
+  .btn-download-overlay svg {
+    background-color: #DCDCDC;
+    padding: 2px;
+    width: 115px;
+}
 }
 
 @media (max-width: 480px) {
   .page-one .card h3 {
     margin-bottom: 0px;
     margin-top: 2%;
+}    
+.page-one .card button {
+  margin-top: 10px;
 }
 }

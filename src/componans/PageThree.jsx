@@ -156,47 +156,13 @@ const PageThree = () => {
             drawCard(popupCanvasRef.current, previewDesign, userName, 'preview');
     }, [previewDesign, userName]);
 
-    const handleNext = async () => {
+    const handleNext = () => {
         if (selectedCard === null) {
             setErrorMessage('الرجاء اختيار تصميم أولاً');
             return;
         }
         const design = designs[selectedCard];
         navigate('/page-four', { state: { name: userName, design } });
-
-        const cachedImg = imageCache[design.image];
-        const img = cachedImg || await new Promise((resolve, reject) => {
-            const i = new Image();
-            i.crossOrigin = 'anonymous';
-            i.onload = () => { imageCache[design.image] = i; resolve(i); };
-            i.onerror = reject;
-            i.src = design.image;
-        });
-
-        const fullCanvas = document.createElement('canvas');
-        fullCanvas.width = img.naturalWidth;
-        fullCanvas.height = img.naturalHeight;
-        const ctx = fullCanvas.getContext('2d');
-        ctx.drawImage(img, 0, 0);
-        const name = String(userName || 'User Name').trim() || 'User Name';
-        const fs = Math.round(img.naturalHeight * (design.fontSizeRatio || 0.05));
-        ctx.save();
-        ctx.font = `400 ${fs}px ${design.fontFamily}`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = design.color;
-        ctx.fillText(name, design.textX, design.textY);
-        ctx.restore();
-
-        const blob = await new Promise(res => fullCanvas.toBlob(res, 'image/png'));
-        if (!blob) return;
-        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `eid-card-${userName}-${timestamp}.png`;
-        a.click();
-        URL.revokeObjectURL(url);
     };
 
     if (!userName) return <Navigate to="/" replace />;
