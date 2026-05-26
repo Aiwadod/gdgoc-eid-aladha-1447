@@ -1411,7 +1411,7 @@ footer span {
     font-size: 14px;
     /* margin-bottom: 215px; */
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: -25%;
     /* margin-top: -47px; */
     /* margin-left: 50px; */
@@ -1470,15 +1470,6 @@ footer span {
     margin-top: 2%;
   }    
   
-  .error-message {
-    font-size: 14px;
-    /* margin-bottom: 215px; */
-    position: absolute;
-    top: 20%;
-    left: -25%;
-    /* margin-top: -47px; */
-    /* margin-left: 50px; */
-  }
   .page-one .card button {
     margin-top: 10px;
   }
