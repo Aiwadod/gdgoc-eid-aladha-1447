@@ -97,7 +97,7 @@ header {
   gap: 100px;
   margin: 0 auto;
   margin-top: -15px;
-  margin-bottom: -10;
+  margin-bottom: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +314,7 @@ header .right img {
 .page-one .input-container {
   align-items: center;
   position: absolute;
-  top: 55%;
+  top: 52%;
 }
 
 /* Selectable Choice Buttons (e.g. Categories) */
