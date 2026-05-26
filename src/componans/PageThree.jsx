@@ -43,7 +43,7 @@ const normalAssetUrls = import.meta.glob('../assets/images/normal/*.{png,jpg,jpe
 
 // ── 
 const google = [
-    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 1300, textY: 790, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 1200, textY: 690, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED  },
     { id: 2, image: getAssetUrlByFilename(googleAssetUrls, 'design2.jpg'), textX: 2500, textY: 2420, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 3, image: getAssetUrlByFilename(googleAssetUrls, 'design3.jpg'), textX: 1200, textY: 700, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
     { id: 4, image: getAssetUrlByFilename(googleAssetUrls, 'design4.jpg'), textX: 2500, textY: 6620, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
