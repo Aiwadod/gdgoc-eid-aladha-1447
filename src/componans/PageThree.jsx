@@ -196,7 +196,7 @@ const PageThree = () => {
                             </div>
                         ))}
                     </div>
-                    {/* {errorMessage && <p className="error-message">{errorMessage}</p>} */}
+                    {errorMessage && <p className="error-message">{errorMessage}</p>}
                     <div className="action-buttons">
                         <Link to="/page-two" state={{ name: userName }}>
                             <button className="btn-yellow">السابق</button>
