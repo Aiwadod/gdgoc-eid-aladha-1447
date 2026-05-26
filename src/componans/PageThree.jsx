@@ -247,7 +247,7 @@ const PageThree = () => {
                     </div>
                 </div>
             )}
-            <Footer />
+            <Footer classs="foot" />
         </div>
     );
 };

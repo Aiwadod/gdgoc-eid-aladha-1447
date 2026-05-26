@@ -239,12 +239,12 @@ const PageFour = () => {
                     <div className="canvas-section">
                         <div className="page-four-preview">
                             {/* <CountdownOverlay loaded={isReady} /> */}
-                            <canvas ref={canvasRef} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                            <canvas ref={canvasRef}  style={{ width: '100%', height: 'auto', display: 'block' }} />
                         </div>
                     </div>
                 </div>
             </main>
-            <Footer />
+            <Footer classs="foot" />
         </div>
     );
 };
