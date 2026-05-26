@@ -59,7 +59,7 @@ body {
   background-image: url("/background-one.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 97% 97%;
+  background-size: 96% 95%;
   aspect-ratio: 855 / 805;
   width: 90%;
   max-width: 855px;
@@ -188,6 +188,7 @@ header .right img {
 .page-one .card {
   justify-content: space-between;
   padding: 50px;
+  position: relative;
 }
 
 .page-two .card {
@@ -264,7 +265,7 @@ header .right img {
   margin-top: 0px;
   margin-left: 100px;  
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 400px;
   font-weight: 600;
 }
 
@@ -307,6 +308,8 @@ header .right img {
 
 .page-one .input-container {
   align-items: center;
+  position: absolute;
+  top: 55%;
 }
 
 /* Selectable Choice Buttons (e.g. Categories) */
@@ -1025,7 +1028,7 @@ footer span {
   .page-one .input-container {
     margin-bottom: 40%;
     margin-left: 40px;
-
+top: 50% !important;
 
   }
   .page-two .card-content {
@@ -1227,7 +1230,7 @@ footer span {
 
   .error-message {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 215px;
     margin-top: -47px;
     margin-left: 50px;
   }
@@ -1245,15 +1248,12 @@ footer span {
     margin-top: 0px;
   }
   footer{
-    margin-top: -50px;
+    margin-top: -70px;
   }
-  .foot,
-  .page-three footer{
+  .foot{
     margin-top: 0px;
   }
- .foot-four{
-    margin-top: -50px !important;
-  }
+
   .btn-download-overlay {
     left: 50%;
   }

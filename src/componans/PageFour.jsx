@@ -282,7 +282,7 @@ const PageFour = () => {
                     </div>
                 </div>
             </main>
-            <Footer classs="foot-four" />
+            <Footer />
         </div>
     );
 };
