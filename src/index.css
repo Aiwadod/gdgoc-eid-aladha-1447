@@ -1468,6 +1468,8 @@ footer span {
   .page-one .card h3 {
     margin-bottom: 0px;
     margin-top: 2%;
+    position: absolute;
+    top: 10%;
   }    
   
   .page-one .card button {
