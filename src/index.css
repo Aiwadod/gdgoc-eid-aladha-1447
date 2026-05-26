@@ -975,7 +975,7 @@ footer span {
   }
 
   .page-one .input-container {
-    margin-bottom: 199px;
+    margin-bottom: 35%;
     margin-left: 40px;
 
 
@@ -1003,11 +1003,12 @@ footer span {
 
   .page-one .card h3 {
     margin-bottom: 0px;
-    margin-top: 0;
+    margin-top: 10%;
   }
 
   .page-two .card h3 {
     margin-bottom: 0px;
+    margin-top: 20%;
   }
 
   .card h3 svg {
@@ -1052,7 +1053,7 @@ footer span {
   }
 
 .page-two .action-buttons {
-    margin-bottom: 100px;
+    margin-bottom: 44%;
 }
 .page-three .action-buttons  {
     margin-bottom: 150px;
