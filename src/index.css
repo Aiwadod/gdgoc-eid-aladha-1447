@@ -96,6 +96,8 @@ header {
   max-width: 1200px;
   gap: 100px;
   margin: 0 auto;
+  margin-top: -15px;
+  margin-bottom: -10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,8 +824,7 @@ footer span {
   transition: background 0.2s;
 }
 .btn-download-overlay svg {
-      background-color: #DCDCDC;
-      padding: 2px;
+      padding: 1px;
 }
 
 
@@ -950,6 +951,7 @@ footer span {
   header {
     width: 95%;
     padding: 20px 0;
+    margin: 0px auto;
     gap: 30px;
   }
 
@@ -1256,7 +1258,6 @@ footer span {
     left: 50%;
   }
   .btn-download-overlay svg {
-    background-color: #DCDCDC;
     padding: 2px;
     width: 115px;
 }
