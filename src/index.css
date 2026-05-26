@@ -1250,7 +1250,7 @@ top: 50% !important;
     max-width: 319px;
   }
   .error-message .error-svg--arabic {
-    margin-top: 0px;
+    margin-top: -21%;
   }
   footer{
     margin-top: -70px;
@@ -1266,16 +1266,6 @@ top: 50% !important;
     padding: 2px;
     width: 115px;
 }
-}
-
-@media (max-width: 500px) {
-  .page-one .card h3 {
-    margin-bottom: 0px;
-    margin-top: 2%;
-}    
-.page-one .card button {
-  margin-top: 10px;
-}
 .error-message .error-svg {
   width: 100%;
   max-width: 319px;
@@ -1287,4 +1277,18 @@ top: 50% !important;
   margin-bottom: 0px;
   margin-top: 8%;
 }
+}
+
+@media (max-width: 480px) {
+  .page-one .card h3 {
+    margin-bottom: 0px;
+    margin-top: 2%;
+}    
+.page-one .card button {
+  margin-top: 10px;
+}
+.error-message .error-svg--arabic {
+  margin-top: -20px;
+}
+
 }
