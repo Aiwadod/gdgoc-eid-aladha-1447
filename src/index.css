@@ -416,6 +416,7 @@ header .right img {
 }
 
 .action-buttons {
+  direction: ltr;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
