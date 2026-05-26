@@ -1268,12 +1268,23 @@ top: 50% !important;
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .page-one .card h3 {
     margin-bottom: 0px;
     margin-top: 2%;
 }    
 .page-one .card button {
   margin-top: 10px;
+}
+.error-message .error-svg {
+  width: 100%;
+  max-width: 319px;
+}
+.error-message .space{
+  max-width: 310px;
+}
+.page-one .card h3 {
+  margin-bottom: 0px;
+  margin-top: 8%;
 }
 }
