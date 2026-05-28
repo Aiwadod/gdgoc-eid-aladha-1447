@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { Analytics } from "@vercel/analytics/react"
 import PageOne from './componans/PageOne'
 import PageTwo from './componans/PageTwo'
 import PageThree from './componans/PageThree'
@@ -18,6 +19,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
+      <Analytics />
     </>
   )
 }
